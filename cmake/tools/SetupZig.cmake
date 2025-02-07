@@ -20,7 +20,7 @@ else()
   unsupported(CMAKE_SYSTEM_NAME)
 endif()
 
-optionx(ZIG_COMMIT STRING "The zig commit to use in oven-sh/zig" DEFAULT "96b21a3adfcde9275375b24168f44122f4f01506")
+set(ZIG_COMMIT "96b21a3adfcde9275375b24168f44122f4f01506")
 optionx(ZIG_TARGET STRING "The zig target to use" DEFAULT ${DEFAULT_ZIG_TARGET})
 
 if(CMAKE_BUILD_TYPE STREQUAL "Release")
